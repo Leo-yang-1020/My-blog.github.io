@@ -1,22 +1,35 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-
-    <!--meta 单标签 用来引入或声明一些内容-->
-
-    <meta charset="UTF-8">
-
-    <!--title 标题标签-->
-
-    <title>小型博客</title>
-
-    <style>
-        body{
+    <tittle>钟镇阳的个人介绍</tittle>
+    <embed src="葫芦娃.mp3" hidden="true" autostart="true"/>
+<style type="text/css">
+a:hover{color:brown}
+.bg {
+            background: url(东湖.jpg);
+            height:600px;
+            text-align: center;
+            line-height: 600px;
+        }
+        .bg-blur {
+            float: left;
+            width: 100%;
+            
+            background-position: center;
+            background-size: cover;
+            -webkit-filter: blur(2px);
+            -moz-filter: blur(2px);
+            -o-filter: blur(2px);
+            -ms-filter: blur(2px);
+            filter: blur(2px);
+        }
+body{
             /*边界看宽度默认为8,在这里初始值设为零*/
             margin: 0;
             font-family: 楷体;
+           
         }
         nav{
             width: 100%;
@@ -41,108 +54,55 @@
             top: 7px;
             left: 15px;
         }
-        ul{
+        #navi{
             float: right;
             margin: 0;
             /*左内边距设为零*/
             padding-left: 0;
         }
-        li{
+        #navi li{
             float: left;
             /*设置列表项的前缀为none*/
             list-style: none;
             margin-right: 30px;
         }
-        li a{
+        #navi li a{
             line-height: 64px;
             /*去除超链接下划线*/
             text-decoration: none;
             color: black;
         }
-        li a:hover{
+        #navi li a:hover{
             color: brown;
         }
         #header{
             /*图片宽度设为100%*/
             width: 100%;
         }
-        main {
-            width: 1000px;
-            margin:0 auto;
-        }
-        /*只找到父子关系的标签找到section下img标签，不会找到孙级标签*/
-        section > img {
-            width: 1000px;
-        }
-        p {
-            color: brown;
-            /*文本首行缩进2个字符*/
-            text-indent: 2em;
-        }
-        h2 {
-            color: brown;
-        }
-        #myclassmate {
-            width: 1000px;
-            height: 630px;
-            background-image: url('personage/classmates.jpg');
-            background-size: 1000px 630px;
-            /*relative 相对的 相对定位 */
-            /*1. 相对自己原来的位置做位置的微调
-            2.让该标签下的子标签做绝对定位时，以该标签为参考物调整，而不再是以浏览器边框为参考物*/
-            position: relative;
-        }
-        #myclassmate img{
-            border:2px white solid;
-            border-radius: 50%;
-            /*absolute1.绝对定位的元素会被浮起来，原来的位置会被后面的元素侵占*/
-            position: absolute;
-        }
-        /*找到div下的第1个子标签*/
-        #myclassmate img:nth-child(1){
-            width: 200px;
-            top: 100px;
-            left: 100px;
-        }
-        /*找到div下的第2个子标签*/
-        #myclassmate img:nth-child(2){
-            width: 270px;
-            top: 260px;
-            left: 360px;
-        }
-        /*找到div下的第3个子标签*/
-        #myclassmate img:nth-child(3){
-            width: 230px;
-            top: 100px;
-            right: 60px;
-        }
-    </style>
+        .oldsaying{text-decoration:line-through;}
+        .center{text-align: center;}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>自我介绍网页</title>
 
 </head>
 
-<body>
-
-    <!--加载音频文件-->
-
-   <!--<audio controls><source src="葫芦娃.mp3"></audio>-->
-
-    <!--加载视频文件-->
-
-    <!--<video src=""></video>-->
-
  
 
-    <!--navigation 导航 标记网页中的导航条 块元素-->
+<body>
+    <div class="bg bg-blur"></div>
 
     <nav>
 
         <div>
 
-            <img id="logo" src="主楼风光.jpg" alt="主楼风光">
+            
 
             <!--ul无序列表 li 列表元素-->
 
-            <ul>
+            <ul id="navi">
 
                 <!--实现点击首页标签跳转到指定界面-->
 
@@ -150,110 +110,108 @@
 
                 <li><a href="https://leo-yang-1020.github.io/Leo-yang-1020/">我的课表</a></li>
 
-                <li><a href="#html5">HTML5</a></li>
+                <li><a href="https://www.imooc.com/u/index/allcourses">HTML5</a></li>
 
                 <li><a href="https://leo-yang-1020.github.io/The-ssh/">我的ssh学习进程</a></li>
 
-                <li><a href="#hometown">我的家乡</a></li>
+                <li><a href="https://baike.baidu.com/item/简阳/10888158?fr=aladdin">我的家乡</a></li>
 
-                <li><a href="#myschool">我的学校</a></li>
+                <li><a href="https://www.uestc.edu.cn/">我的学校</a></li>
 
-                <li><a href="#myself">关于我</a></li>
+                <li><a href="#个人界面">关于我</a></li>
 
             </ul>
 
         </div>
 
     </nav>
+  
+        <br/><br/><br/>
+        <a name="top"></a><!--设置一个锚点，点击时跳转到该位置-->
+        <div style="text-align: center;">
+        <img src="电子科大校徽.jpg" width="160" height="160" style="margin: 0 auto;" />
 
-    <img id="header" src="沙河小路.jpg" alt="最美沙河">
+        <h1><font color="blue">Leo</font></h1>
 
-    <!--main 元素 标记网页中的主要部分内容-->
+        <p><a href="#工作">爱编程/</a><a href="#寄语">爱学习/</a><a href="#工作">爱熬夜/</a></p>
 
-    <main>
+        <marquee ><p style="color:red;font-size:20px ">期末考试即将到来，千万要认真复习！！！</p></marquee><br /><br />
 
-        <!--p标签，用来标记网页中的段落内容！-->
+        <img src="主楼风光.jpg" />
+        
+        </div>
+        
+        <div class="center">
+        <h2><font color="red">01</font></h2>
+        <section id="生活">
+        <h3>生活</h3>
 
-        <p>“学好一门技术的唯一方法是使用它,在使用它的过程中才能真正学会它。如果能够在使用它的过程中体会到乐趣,就是学习的最佳"状态。希望大家在学习HTML5的过程中多多练习,多敲代码一定会有回报,意想不到的收获都会在使用的过程中进发出来。”</p>
-
-        <!--section 组件、模块, 块元素-->
-
-        <section id="html5">
-
-            <img src="12.jpg" alt="html5.jpg">
-
-            <p>“从小就喜欢学习,感觉自己的自学能力超强,也喜欢把自己学会的知识分享给大家。我希望自己能够成为一个好老师,把每一个同学·都教好,让他们都能有所成就。我认为一个好老师不仅要有较好的技术,也要对学生严格要求。放任不管只有部分同学能安心学习,严格要求才能保证绝大多数同学都能稳下心来好好学习。”</p>
-
+        <p>偶然拍到的主楼，一切都是那么美</p> <br /><br />
+        <img src="实验楼.jpg" width="320" height="320"/><br/><br/>
+        <hr color="#FFCCCC" width="750px" /><br /><br />
         </section>
+    </div>
+    <section id="工作">
+    <div class="center">
+       
+        <h2><font color="red">02</font></h2>
+        
+        <h3>工作</h3>
 
-        《》
-
-        <section id="classmates">
-
-            <h2>我的同学</h2>
-
-            <div id="myclassmate">
-
-                <img src="personage/wf.png" alt="">
-
-                <img src="personage/lry.jpg" alt="">
-
-                <img src="personage/ldh.jpg" alt="">
-
-            </div>
-
-            <p>“我的同学们都是大佬。”</p>
-
-        </section>
-
+        <img src="肝.jpg" width="320" heigth="320" /><br /><br />
+        <p>每个熬夜肝代码的日子都值得铭记<br/>
+            <span class="oldsaying">天天熬夜开黑</span>天天熬夜肝代码
+        </p>
+        <hr color="#FFCCCC" width="750px" /><br /><br />
+        </section>   
+    </div>
  
+    <div class="center">
+        <h2><font color="red">03</font></h2>
+        <section id="寄语">
+        <h3>寄语</h3>
 
-        <section id="hometown">
+        <p>不要辜负那个努力的自己</p>
 
-            <h2>我的家乡</h2>
+        <img src="奋斗.jpg" width="320" heigth="320"/><br /><br />
 
-            <img src="personage/hometown.JPG" alt="hometown.jpg">
-
-            <p>我的家乡是个美丽的城市。</p>
-
+        <hr color="#FFCCCC" width="750px" /><br /><br />
         </section>
+    </div>
+            
 
+        <h2><font color="red">04</font></h2>
+        <section id="个人界面">
+        <h3>个人界面</h3>
         <section id="myself">
             <ul>
                 <li>喜好
-                <ul>
+                    <ul style="color:crimson;font-size:20px">
                     <li>唱</li>
                     <li>跳</li>
                     <li>rap</li>
                     <li>篮球</li>
                     </ul></li>
-                <ul><li>学习进度
+                <li >学习进度
+                    <ul style="color:crimson;font-size:20px">
                     <li>ssh的基本操作</li>
-                    <li>linux的简单操作</li>
+                    <li>Linux的简单操作</li>
                     <li>html,css</li>
                 </ul></li>
             </ul>  
         </section>
 
-        <section id="myschool">
+        <br /><br /><br />
+        <marquee width="750px" color="blue" ><p>第一次大型html，肝完就去复习</p></marquee><br /><br />
+ 
 
-            <h2>我的学校</h2>
-
-            <img src="主楼风光.jpg" alt="lzu.jpg">
-
-            <p>电子科技大学风景最美</p>
-
-        </section>
+        <a href="#top"><p style="color:darkmagenta;text-align: center;">点击回到顶部</p></a>
+         <!--希望在这里给用户一个链接，用户点击此处的内容，跳转到锚点的位置-->
+  </center>
 
  
 
-    </main>
 
-    <hr>
-
-   
-
- 
 
 </body>
 
